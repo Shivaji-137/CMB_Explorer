@@ -123,7 +123,6 @@ CMB_Explorer/
 ├── .streamlit/
 │   └── config.toml          # UI theme configuration
 ├── README.md                # This file
-├── SOP.md                   # Research statement with citations
 ├── LICENSE                  # MIT License
 └── .gitignore              # Git ignore rules
 ```
