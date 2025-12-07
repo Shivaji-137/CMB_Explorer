@@ -8,9 +8,9 @@ font = "sans serif"
 [server]
 headless = true
 port = 8501
-# Disable external network access - localhost only
+# Allow localhost access
 address = "localhost"
-enableCORS = false
+enableCORS = true
 enableXsrfProtection = true
 maxUploadSize = 200
 

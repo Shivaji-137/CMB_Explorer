@@ -910,7 +910,7 @@ def main():
     </div>
     """, unsafe_allow_html=True)
     fig = create_interactive_plot(data, selected_spectra, log_scale)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
     
     # Use cached derived parameters
     omegam = derived['omegam']
@@ -927,7 +927,7 @@ def main():
                      f'{tau:.4f}', f'{ns:.4f}', f'{As*1e9:.3f}'],
             'Unit': ['km/s/Mpc', '', '', '', '', '']
         })
-        st.dataframe(params_df, hide_index=True, use_container_width=True)
+        st.dataframe(params_df, hide_index=True, width='stretch')
     
     with st.expander("🌟 Derived Parameters", expanded=False):
         derived_df = pd.DataFrame({
@@ -936,12 +936,12 @@ def main():
                      f'{omk:.4f}', f'{age:.3f}', f'{sigma8:.4f}'],
             'Unit': ['', '', '', '', 'Gyr', '']
         })
-        st.dataframe(derived_df, hide_index=True, use_container_width=True)
+        st.dataframe(derived_df, hide_index=True, width='stretch')
     
     # Data table section
     with st.expander("📈 View Numerical Data Table (first 100 multipoles)"):
         df = create_data_table(data, selected_spectra, max_ell=100)
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width='stretch')
     
     # Download section - in expander to save space
     with st.expander("💾 Export Data", expanded=False):
@@ -955,7 +955,7 @@ def main():
             file_name=f"cmb_spectra_H0_{H0:.1f}_ns_{ns:.3f}.csv",
             mime="text/csv",
             help="Download the computed power spectra data",
-            use_container_width=True
+            width='stretch'
         )
         
         # Prepare parameters file
@@ -1004,7 +1004,7 @@ lens_potential_accuracy = {lens_pot_accuracy}
             file_name=f"cmb_parameters_H0_{H0:.1f}_ns_{ns:.3f}.txt",
             mime="text/plain",
             help="Download the parameter values used",
-            use_container_width=True
+            width='stretch'
         )
     
     # Matter power spectrum (optional)
@@ -1074,7 +1074,7 @@ lens_potential_accuracy = {lens_pot_accuracy}
                     legend={'x': 0.02, 'y': 0.98, 'bgcolor': 'rgba(26, 31, 58, 0.9)', 'bordercolor': 'rgba(255, 215, 0, 0.5)', 'borderwidth': 2, 'font': {'color': '#E0E0E0', 'size': 12}}
                 )
                 
-                st.plotly_chart(fig_pk, use_container_width=True)
+                st.plotly_chart(fig_pk, width='stretch')
                 
                 st.info(f"σ₈(z=0) = {sigma8:.4f} - RMS matter fluctuations in 8 Mpc/h spheres")
                 
