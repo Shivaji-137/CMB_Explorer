@@ -4,8 +4,17 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
 [![CAMB](https://img.shields.io/badge/CAMB-1.5+-green.svg)](https://camb.info)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live App](https://img.shields.io/badge/Live%20App-Streamlit-FF4B4B.svg)](https://cmb-explorer-camb.streamlit.app/)
 
 An interactive web application for exploring Cosmic Microwave Background (CMB) power spectra using CAMB with adjustable cosmological parameters. Built for astronomy research and education.
+
+---
+
+## 🚀 **[Try the Live App →](https://cmb-explorer-camb.streamlit.app/)**
+
+**No installation required!** Experience the full-featured CMB explorer directly in your browser.
+
+---
 
 ## 🎯 Motivation
 
@@ -46,11 +55,15 @@ This project was developed to deepen practical understanding of CMB physics by e
 
 ## 🚀 Quick Start
 
-### Installation
+### Option 1: Use the Live App (Recommended)
+
+**🌐 [Launch App](https://cmb-explorer-camb.streamlit.app/)** - No installation needed!
+
+### Option 2: Run Locally
 
 ```bash
 # Clone the repository
-https://github.com/Shivaji-137/CMB_Explorer.git
+git clone https://github.com/Shivaji-137/CMB_Explorer.git
 cd CMB_Explorer
 
 # Install dependencies
