@@ -50,8 +50,8 @@ This project was developed to deepen practical understanding of CMB physics by e
 
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/CMB-Power-Spectrum-Explorer.git
-cd CMB-Power-Spectrum-Explorer
+https://github.com/Shivaji-137/CMB_Explorer.git
+cd CMB_Explorer
 
 # Install dependencies
 pip install -r requirements.txt
