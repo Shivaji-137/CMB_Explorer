@@ -1,0 +1,25 @@
+[theme]
+primaryColor = "#FFD700"
+backgroundColor = "#0A0E27"
+secondaryBackgroundColor = "#1a1f3a"
+textColor = "#E0E0E0"
+font = "sans serif"
+
+[server]
+headless = true
+port = 8501
+# Disable external network access - localhost only
+address = "localhost"
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 200
+
+[browser]
+# Disable automatic browser opening and external connections
+serverAddress = "localhost"
+gatherUsageStats = false
+
+[client]
+# Disable telemetry and external connections
+showErrorDetails = false
+toolbarMode = "minimal"
